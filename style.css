@@ -19,8 +19,10 @@ h2{
 
 h3{
     font-family: "roboto";
+    margin-bottom: 5px;
     font-weight: 700;
     font-size: 16px;
+    margin-left: 8px;
 }
 
 h4{
@@ -32,15 +34,18 @@ h4{
 
 h5{
     font-family: "roboto";
+    margin-bottom: 5px;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 15px;
     color: #a6a6a6;
+    margin-left: 8px;
 }
 
 h6{
     font-family: "roboto";
     font-weight: 400;
     font-size: 16px;
+    margin-left: 8px;
 }
 
 .conteiner{
@@ -51,8 +56,21 @@ h6{
     margin-top: 92px;
     margin-bottom: 92px;
 }
+.conteiner-conf-pedido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 1026px;
+    z-index: 2;
+    top:0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9)
+}
 
 .barra-topo{
+    z-index: 1;
     height: 92px;
     width: 100%;
     background-color: #CF2B2B;
@@ -66,6 +84,7 @@ h6{
 }
 
 .barra-inferior{
+    z-index: 1;
     height: 92px;
     width: 100%;
     background-color: #ffffff;
@@ -77,40 +96,78 @@ h6{
     left:0
 }
 
-.lista-prato, .lista-bebida, .lista-sobremesa{
+.lista-opcoes{
     display: flex;
     overflow-x: scroll;
     margin-top: 17px;
 }
 
-.lista-prato div{ 
-    width: 172px;
+.lista-opcoes div{ 
+    min-width: 172px;
     height: 217px;
     border-radius: 9px;
     margin-left: 17px;
     background-color: #ffffff;
+    display:flex;
+    flex-direction: column;
+    box-shadow: 0px 10px 10px rgba(109, 109, 109, 0.1);
+    justify-content: space-around;
+    position: relative;
 }
 
-.lista-bebida div{ 
-    width: 172px;
-    height: 217px;
-    border-radius: 9px;
-    margin-left: 17px;
-    background-color: #ffffff;
+.lista-opcoes img{
+    width: 144px;
+    height: 87px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    object-fit: cover;
 }
 
-.lista-sobremesa div{ 
-    width: 172px;
-    height: 217px;
-    border-radius: 9px;
-    margin-left: 17px;
-    background-color: #ffffff;
+.lista-opcoes ion-icon{
+    display: none;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+}
+
+.marcado{
+    border:6px solid #32B72F;
+}
+
+.marcado ion-icon{
+    color: #32B72F;
+    display: inline;
 }
 
 .barra-inferior button{
     height: 61px;
     width: 364px;
-    background-color: #CBCBCB;
     border-radius: 50px;
     border: hidden;
+}
+
+.botao-inativo{
+    background-color: #cbcbcb;
+}
+
+.fechar-pedido{
+    background-color: #32B72F;
+}
+
+.fechar-pedido h4{
+    font-weight: 700;
+}
+
+.escondido{
+    display: none;
+}
+.conf-pedido{
+    height: 353px;
+    width: 377px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+    background-color: #50d074;
+    border-radius: 9px;
 }
