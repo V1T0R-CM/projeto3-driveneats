@@ -9,124 +9,135 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!--Conteiner geral-->
     <div class="conteiner">
+        <!--Barra do topo-->
         <div class="barra-topo">
             <h1>DrivenEats</h1>
             <h4>Sua comida em 6 minutos</h4>
         </div>
+        <!--Barra do topo-->
+        <h2>Primeiro, seu prato</h2>
+        <!--Lista de pratos disponiveis-->
         <div class="lista-opcoes prato">
             <div onclick="marcadorprato(this)">
                 <img src="/projeto3-driveneats/imagens/opcao-prato1.png"/>
-                <h3>Junior Ribs</h3>
+                <h3 class="nome-prato">Junior Ribs</h3>
                 <h5>Costela grelhada</h5>
-                <h6>R$ 69,90</h6>
+                <h6 class="preco-prato">R$ 69,90</h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
             <div onclick="marcadorprato(this)">
                 <img src="/projeto3-driveneats/imagens/opcao-prato2.jpg"/>
-                <h3>Toowomba Pasta</h3>
+                <h3 class="nome-prato">Toowomba Pasta</h3>
                 <h5>Camarão com fettuccine</h5>
-                <h6>R$ 64,90</h6>
+                <h6 class="preco-prato">R$ 64,90</h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
             <div onclick="marcadorprato(this)">
                 <img src="/projeto3-driveneats/imagens/opcao-prato3.png"/>
-                <h3>Ribs Rice Outback</h3>
+                <h3 class="nome-prato">Ribs Rice Outback</h3>
                 <h5>O arroz de costela</h5>
-                <h6>R$ 57,90</h6>
+                <h6 class="preco-prato">R$ 57,90</h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
             <div onclick="marcadorprato(this)">
                 <img src="/projeto3-driveneats/imagens/opcao-prato4.png"/>
-                <h3>Chicken Fingers</h3>
+                <h3 class="nome-prato">Chicken Fingers</h3>
                 <h5>Peito de frango empanado</h5>
-                <h6>R$ 54,90</h6>
+                <h6 class="preco-prato">R$ 54,90</h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
             <div onclick="marcadorprato(this)">
                 <img src="/projeto3-driveneats/imagens/opcao-prato5.png"/>
-                <h3>Steakhouse Pasta</h3>
+                <h3 class="nome-prato">Steakhouse Pasta</h3>
                 <h5>fettuccine com cortes de filet mignon</h5>
-                <h6>R$ 64,90</h6>
+                <h6 class="preco-prato">R$ 64,90</h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
         </div>
+        <!--Lista de pratos disponiveis-->
         <h2>Agora, sua bebida</h2>
+        <!--Lista de bebidas disponiveis-->
         <div class="lista-opcoes bebida">
             <div onclick="marcadorbebida(this)">
-                <img src="/projeto3-driveneats/imagens/churros.jpg"/>
-                <h3>Bolo de churros</h3>
-                <h5>Apenas o bolo</h5>
-                <h6>R$ 10,00</h6>
+                <img src="/projeto3-driveneats/imagens/opcao-bebida1.jpg"/>
+                <h3 class="nome-bebida">Coca-Cola</h3>
+                <h5>Lata 350ml</h5>
+                <h6 class="preco-bebida">R$ 4,00</h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
             <div onclick="marcadorbebida(this)">
-                <img src="/projeto3-driveneats/imagens/churros.jpg"/>
-                <h3>Bolo de churros</h3>
-                <h5>Apenas o bolo</h5>
-                <h6>R$ 10,00</h6>
+                <img src="/projeto3-driveneats/imagens/opcao-bebida2.jpg"/>
+                <h3 class="nome-bebida">Fanta Laranja</h3>
+                <h5>Lata 350ml</h5>
+                <h6 class="preco-bebida">R$ 3,50</h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
             <div onclick="marcadorbebida(this)">
-                <img src="/projeto3-driveneats/imagens/churros.jpg"/>
-                <h3>Bolo de churros</h3>
-                <h5>Apenas o bolo</h5>
-                <h6>R$ 10,00</h6>
+                <img src="/projeto3-driveneats/imagens/opcao-bebida3.jpg"/>
+                <h3 class="nome-bebida">Sprite</h3>
+                <h5>Lata 350ml</h5>
+                <h6 class="preco-bebida">R$ 3,00</h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
             <div onclick="marcadorbebida(this)">
-                <img src="/projeto3-driveneats/imagens/churros.jpg"/>
-                <h3>Bolo de churros</h3>
-                <h5>Apenas o bolo</h5>
-                <h6>R$ 10,00</h6>
+                <img src="/projeto3-driveneats/imagens/opcao-bebida4.jpg"/>
+                <h3 class="nome-bebida">Kuat</h3>
+                <h5>Lata 350ml</h5>
+                <h6 class="preco-bebida">R$ 2,60</h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
             <div onclick="marcadorbebida(this)">
-                <img src="/projeto3-driveneats/imagens/churros.jpg"/>
-                <h3>Bolo de churros</h3>
-                <h5>Apenas o bolo</h5>
-                <h6>R$ 10,00</h6>
+                <img src="/projeto3-driveneats/imagens/opcao-bebida5.jpg"/>
+                <h3 class="nome-bebida">Fanta Uva</h3>
+                <h5>Lata 350ml</h5>
+                <h6 class="preco-bebida">R$ 3,50</h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
         </div>
+        <!--Lista de bebidas disponiveis-->
         <h2>Por fim, sua sobremesa</h2>
+        <!--Lista de sobremesas disponiveis-->
         <div class="lista-opcoes sobremesa">
             <div onclick="marcadorsobremesa(this)">
-                <img src="/projeto3-driveneats/imagens/churros.jpg"/>
-                <h3>Bolo de churros</h3>
-                <h5>Apenas o bolo</h5>
-                <h6>R$ 10,00</h6>
+                <img src="/projeto3-driveneats/imagens/opcao-sobremesa1.jpg"/>
+                <h3 class="nome-sobremesa">Chocomousse</h3>
+                <h5>Bolo de chocolate com mousse</h5>
+                <h6 class="preco-sobremesa">R$ 10,00</h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
             <div onclick="marcadorsobremesa(this)">
-                <img src="/projeto3-driveneats/imagens/churros.jpg"/>
-                <h3>Bolo de churros</h3>
-                <h5>Apenas o bolo</h5>
-                <h6>R$ 10,00</h6>
+                <img src="/projeto3-driveneats/imagens/opcao-sobremesa2.jpeg"/>
+                <h3 class="nome-sobremesa">Milkshake</h3>
+                <h5>Copo 350ml</h5>
+                <h6 class="preco-sobremesa">R$ 17,50</h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
             <div onclick="marcadorsobremesa(this)">
-                <img src="/projeto3-driveneats/imagens/churros.jpg"/>
-                <h3>Bolo de churros</h3>
-                <h5>Apenas o bolo</h5>
-                <h6>R$ 10,00</h6>
+                <img src="/projeto3-driveneats/imagens/opcao-sobremesa3.jpg"/>
+                <h3 class="nome-sobremesa">Brownie</h3>
+                <h5>Brownie Tradicional</h5>
+                <h6 class="preco-sobremesa">R$ 5,90</h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
             <div onclick="marcadorsobremesa(this)">
-                <img src="/projeto3-driveneats/imagens/churros.jpg"/>
-                <h3>Bolo de churros</h3>
-                <h5>Apenas o bolo</h5>
-                <h6>R$ 10,00</h6>
+                <img src="/projeto3-driveneats/imagens/opcao-sobremesa4.jpg"/>
+                <h3 class="nome-sobremesa">Fatia de Torta</h3>
+                <h5>Torta de brigadeiro</h5>
+                <h6 class="preco-sobremesa">R$ 25,00</h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
             <div onclick="marcadorsobremesa(this)">
-                <img src="/projeto3-driveneats/imagens/churros.jpg"/>
-                <h3>Bolo de churros</h3>
-                <h5>Apenas o bolo</h5>
-                <h6>R$ 10,00</h6>
+                <img src="/projeto3-driveneats/imagens/opcao-sobremesa5.jpg"/>
+                <h3 class="nome-sobremesa">Sundae</h3>
+                <h5>Copo 300ml</h5>
+                <h6 class="preco-sobremesa">R$ 9,50</h6>
                 <ion-icon name="checkmark-circle"></ion-icon>
             </div>
         </div>
+        <!--Lista de sobremesas disponiveis-->
+        <!--Barra inferior-->
         <div class="barra-inferior">
             <button class="botao-inativo">
                 <h4>Selecione os 3 itens</h4>
@@ -136,10 +147,40 @@
                 <h4>Fechar pedido</h4>
             </button>
         </div>
+        <!--Barra inferior-->
+        <!--Conteiner de confirmação de pedido-->
         <div class="conteiner-conf-pedido escondido">
-            <div class="conf-pedido"></div>
+            <!--Janela de confirmação de pedido-->
+            <div class="conf-pedido">
+                <h1>Confirme seu pedido</h1>
+                <div class="tabela-precos">
+                    <div class="prato-final">
+                        <h2>...</h2>
+                        <h2 class="preco1">R$ ...</h2>
+                    </div>
+                    <div class="bebida-final">
+                        <h2>...</h2>
+                        <h2 class="preco2">R$ ...</h2>
+                    </div>
+                    <div class="sobremesa-final">
+                        <h2>...</h2>
+                        <h2 class="preco3">R$ ...</h2>
+                    </div>
+                    <div class="total-compra">
+                        <h1>TOTAL</h1>
+                        <h1 class="preco-total">R$ ...</h1>
+                    </div>
+                </div>
+                <button class="confirma-pedido" onclick="confirmaPedido()">
+                    <h1>Tudo certo, pode pedir!</h1>
+                </button>
+                <h1 onclick="cancelaPedido()">Cancelar</h1>
+            </div>
+            <!--Janela de confirmação de pedido-->
         </div>
+        <!--Conteiner de confirmação de pedido-->
     </div>
+    <!--Conteiner geral-->
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="script.js"></script>
 </body>
